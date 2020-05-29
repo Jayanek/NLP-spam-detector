@@ -30,5 +30,5 @@ print("Using NB : ", score_01, " Using AdaBoost : ", score_02)
 prediction01 = model_01.predict(x_test)
 prediction02 = model_02.predict(x_test)
 
-
-print("NB : ", prediction01[i], " Ada: ", prediction02[i], " Actual", y_test[i])
+for i in range(5):
+    print("NB : ", prediction01[i], " Ada: ", prediction02[i], " Actual", list(y_test)[i])
